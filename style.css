@@ -1,0 +1,62 @@
+@import url(./normalize.css); /*чтобы в каждом браузере всё выглядело одинакого*/
+
+body, html {
+    height: 100%; /*растягиваем контенет на всю страницу*/
+}
+
+* {
+    box-sizing: border-box; /*свойства width и height задают ширину и высоту контента и не включают в себя значения отступов, полей и границ.*/
+}
+  
+ .wrapper {
+    min-height: 100%; /*приравниваем минимальную высоту обертки с контентом к высоте html и body*/
+    display: flex; /*делаем блок flexbox*/
+    flex-direction: column; /*меняем направление осей, блоки теперь сверху вниз*/
+    overflow: hidden;
+ }
+
+ .container {
+    margin: 0 auto; /*выравнивание по центру. Сверху/снизу 0, по центру - автоматически*/
+    width: 80%;
+ }
+
+ .head {
+    background-color: #507DEA;
+    height: 100px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .head__item {
+     background: #fff;
+     padding: 20px;
+     text-align: center;
+ }
+
+ .header__col {
+     display: flex;
+ }
+
+ .section-one {
+     display: flex;
+     justify-content:space-around;
+     flex: 1; /* чтобы блок занимал всё свободное пространство в своем контейнере*/
+    background-color: #323A53;
+ }
+
+ .section-one__item {
+     width: 300px;
+     padding: 10px;
+ }
+
+ .section-two {
+     flex: 1; /* чтобы блок занимал всё свободное пространство в своем контейнере*/
+    background-color: #C4476C;
+ }
+
+ .footer {
+    background-color: #584D8E;
+    height: 100px;
+    margin-top: auto;
+ }
